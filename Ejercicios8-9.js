@@ -1,5 +1,5 @@
 // EJERCICIO 1
-let number = prompt("Ingresa un número: ");
+let number = parseFloat(prompt("Ingresa un número: "));
 let resultado = number * 2;
 console.log(resultado);
 
@@ -10,7 +10,7 @@ let number11 = parseFloat(number1);
 
 if (number11 > 0){
     console.log("El número es postivo.")    
-} else if(number1 < 0){
+} else if(number11 < 0){
     console.log("El número es negativo.")    
 } else{
     console.log("El número es cero.")
@@ -21,7 +21,7 @@ let suma = number + number1;
 console.log(suma);
 
 // EJERCICIO 4 
-if (number1 % 2 == 0){
+if (number11 % 2 == 0){
     console.log("El número es par.");
 } else{
     console.log("El número es impar.");
@@ -34,8 +34,8 @@ console.log(saludo);
 
 //Clase 9 
 // EJERCICIO 6
-let numero1 = prompt("Ingresa un numero: ");  
-let numero2 = prompt("Ingresa otro numero: ");
+let numero1 = parseFloat(prompt("Ingresa un numero: "));  
+let numero2 = parseFloat(prompt("Ingresa otro numero: "));
 
 if (numero1 < numero2){
     console.log(`${numero2}! es mayor que ${numero1}`);
@@ -46,8 +46,8 @@ if (numero1 < numero2){
 }
 
 // EJERCICIO 7 
-const rangoMin = 10;
-const rangoMax = 0; 
+const rangoMin = 0;
+const rangoMax = 10; 
 
 let numero3 = prompt("Ingresa un numero: ");
 if (numero3 < rangoMin){
@@ -98,7 +98,7 @@ let edad = prompt("Ingresa tu edad: ");
 if (edad >= 18){
     console.log("Eres mayor de edad. Adelante");
 } else{
-    console.log("No puedes entrar. Denagado.")
+    console.log("No puedes entrar. Denegado.")
 }
 
 // EJERCICIO 12
@@ -106,7 +106,7 @@ if (edad >= 18){
 let peso1 = prompt("Ingresa tu peso en KG: "); 
 let peso = parseFloat(peso1); 
 
-let libras = peso/2.20462; 
+let libras = peso*2.20462; 
 console.log(`${peso} KG es equivalente a ${libras} libras`);
 
 // EJERCICIO 13 
