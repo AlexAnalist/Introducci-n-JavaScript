@@ -1,15 +1,32 @@
-<script>
-let number1 = prompt("Ingrese un número: ");
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicios JavaScript</title>
+</head>
+<body>
+    <script>
+        let horaActual = 11; 
 
-let number11 = parseFloat(number1); 
-
-if (number1 > 0){
-    console.log("El número es postivo.")    
-} else if(number1 < 0){
-    console.log("El número es negativo.")    
-} else{
-    console.log("El número es cero.")
+// Función declarada para mostrar saludo según la hora
+function mostrarSaludo() {
+    if (horaActual < 12) {
+        console.log("Buenos días");
+    } else if (horaActual < 18) {
+        console.log("Buenas tardes");
+    } else {
+        console.log("Buenas noches");
+    }
 }
 
-<script/>
+// Caso 1: Manteniendo la hora establecida.
+console.log("Hora actual:", horaActual);
+mostrarSaludo(); 
 
+// Caso 2: Cambiando la hora.
+horaActual = 8;
+console.log("Hora actual:", horaActual);
+mostrarSaludo(); 
+
+    </script>
+</body>
+</html>
