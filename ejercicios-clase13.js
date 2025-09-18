@@ -144,5 +144,5 @@ const calcularFactorial = function(numero) {
 };
 
 console.log("Factorial de 0:", calcularFactorial(0));   
-console.log("Factorial de 1:", calcularFactorial(10));   
-console.log("Factorial de 5:", calcularFactorial(25));   
+console.log("Factorial de 10:", calcularFactorial(10));   
+console.log("Factorial de 25:", calcularFactorial(25));   
