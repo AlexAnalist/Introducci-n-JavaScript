@@ -5,7 +5,32 @@
 </head>
 <body>
     <script>
-    
+
+const movies = [
+    { title: 'El Señor de los Anillos', duration: 200 },
+    { title: 'Inception', duration: 148 },
+    { title: 'Matrix', duration: 136 },
+    { title: 'Toy Story', duration: 81 },
+    { title: 'Coco', duration: 105 }
+];
+
+let peliCorta = movies[0]; 
+movies.forEach(pelicula => {
+    if (pelicula.duration < peliCorta.duration){
+        peliCorta = pelicula
+    }
+});
+
+const peliRest = movies.filter(pelicula => pelicula !== peliCorta && pelicula.title.length > 10);
+
+const tituloLargos = peliRest.map(pelicula => pelicula.title.toLowerCase()
+);
+
+console.log("Pelicula más corta: ", peliCorta.title); 
+console.log("Titulos más largos: ", tituloLargos); 
+
+
+
     </script>
 </body>
 </html>
